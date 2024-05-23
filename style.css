@@ -1,0 +1,156 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  background-color: #f4d04e;
+}
+
+.container {
+  width: 327px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px #111111;
+  border: 1px solid #111111;
+}
+
+.header-img {
+  border-radius: 10px;
+}
+
+.tag {
+  background-color: #f4d04e;
+  border: none;
+  padding: 4px 12px;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+}
+
+.para {
+  color: #7f7f7f;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 12px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.user-img {
+  width: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 384px;
+  }
+}
