@@ -92,6 +92,10 @@ textarea:not([rows]) {
 
 body {
   background-color: #f4d04e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
